@@ -582,6 +582,8 @@ body {
 	font-size: 1vw;   /* consistent with blog body text */
 	font-family: Open Sans;
 	color: #1E1E1E;
+	padding-right: 0.6rem;
+	box-sizing: border-box;
 }
 
 /* Last bullet spacing fix */
