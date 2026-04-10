@@ -1,0 +1,46 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Keep it Brief Please</title>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id = "Navigation" class = "Second_Nav">
+            <a href = "index.html" class = "nav-title">Home</a>
+            <a href = "About.html" class = "nav-title">About</a>
+            <a href = "portfolio.html" class = "nav-title">Portfolio</a>
+            <a href = "blog.html" class = "nav-title">Blog</a>
+            <a href = "contact.html" class = "nav-title">Contact</a>
+		</div>
+        <div class = "bureau_container">
+            <div class = "bureau_content">
+                <h1>Occupational Outlook Handbook</h1>
+                <p>The Occupational Outlook Handbook (OOH) lives as a massive, static collection of job profiles on the Bureau of Labor Statistics website. It’s one of the most important labor‑market repositories in the U.S., but it isn’t designed for analysis. Anyone trying to understand the current workforce landscape or its projected trajectory has to manually navigate hundreds of pages, extract scattered statistics, and piece together patterns that aren’t presented in a structured way.
+                </p>
+                <p>In this project, I used Python and Power BI to transform the OOH into an interactive, analysis‑ready hub that HR teams can actually reason with. Instead of paging through static government content, users can explore labor‑market patterns, compare roles, and make evidence‑based workforce decisions through a structured, intuitive dashboard experience. </p>
+                <h3>Python & Webscrapping</h3>
+                <p>Using Python, I scraped the OOH index and filtered for the key HTML anchors that define its hidden structure. From there, I extracted the full hierarchy of categories, subcategories, and individual job pages. I then iterated through every job link to pull the core labor‑market fields—current employment, median pay, and projected growth—reconstructing the OOH into a clean, analytics‑ready dataset.</p>
+                <p> I then used Python to run a round of preliminary analysis on the reconstructed dataset—cleaning fields, normalizing formats, and applying early filters and groupings to surface meaningful patterns. This pass helped identify which labor‑market signals (growth rates, wage clusters, role distributions, etc.) should be emphasized in the final Power BI experience and which anomalies required deeper modeling before visualization.</p>
+                <h3>Power BI Data Sets</h3>
+                <p>Once the Python pipeline produced a clean baseline dataset, I moved into Power BI to finish the shaping work. Using Power Query, I resolved any remaining inconsistencies, standardized data types, and engineered additional calculated columns to support richer analysis—things like normalized growth bands, wage groupings, and category‑level rollups.</p>
+                <p>After the transformation layer was stable, I modeled the dataset into a proper relational structure. Each table was connected through clearly defined primary keys, allowing Power BI to reason across categories, occupations, and projections without ambiguity. The result is a semantic model that supports flexible slicing, drilling, and scenario‑based exploration.</p>
+                <h3>Power BI Dashboard</h3>
+                <p>With the semantic model in place, I designed the Power BI report around a clear, instructional drill‑path. The main dashboard surfaces the highest‑level view of the labor market: all OOH categories displayed in a clean, scannable layout, supported by KPIs such as total current employment, projected job growth, and the top five trends emerging across the dataset.</p>
+                <p>From there, users can drill into any category to reveal its subcategories, and then continue down to individual job roles—each level carrying forward the same analytic structure so the experience feels consistent and intuitive. The report also includes a multi‑variable scatter plot that visualizes growth, pay, and job size simultaneously, giving HR teams a quick way to identify high‑opportunity or high‑risk segments of the workforce.</p>
+                <p>The result is a layered, exploratory dashboard that turns a static government dataset into a dynamic decision‑support tool for workforce planning.</p>
+            </div>
+            <div class = "bureau_pics">
+                <img src="Bureau1.png" class="expandable_image" alt="OOH Bureau dashboard 1">
+                <img src="Bureau2.png" class="expandable_image" alt="OOH Bureau dashboard 2">
+                <img src="Bureau 3.png" class="expandable_image" alt="OOH Bureau dashboard 3">
+                <img src="bureau4.png" class="expandable_image" alt="OOH Bureau dashboard 4">
+            </div>
+        </div>
+        <div id="image_modal" class="modal">
+            <span class="modal_close">&times;</span>
+            <img class="modal_content" id="modal_image" src="" alt="">
+        </div>
+        <script src="java.js"></script>
+    </body>
+</html>
