@@ -505,6 +505,7 @@ body {
 	color: #1E1E1E;
 	font-size: 1.1vw;
 	margin: 0;
+	padding-right: 0.6rem;
 }
 
 /* Chevron Icon */
@@ -582,7 +583,7 @@ body {
 	font-size: 1vw;   /* consistent with blog body text */
 	font-family: Open Sans;
 	color: #1E1E1E;
-	padding-right: 0.6rem;
+	padding-right: 0.75rem;
 	box-sizing: border-box;
 }
 
