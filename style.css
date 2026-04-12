@@ -49,14 +49,14 @@ body.unsupported-display::before {
 #Inside_Title_Container {
 	display: flex;
 	flex-direction: row;
-	margin-left: 5.5vw;
+	margin-left: clamp(70px, 5.5vw, 140px);
 }
 
 #Learning_Title {
 	color: #1E1E1E;
-	font-size: 7vw;
-	padding-left: 2vw;
-	margin-bottom: -1vh;
+	font-size: clamp(96px, 7vw, 180px);
+	padding-left: clamp(24px, 2vw, 42px);
+	margin-bottom: -0.08em;
 	font-family: Open Sans;
 	font-weight: 600;
 	letter-spacing: 0.5px;
@@ -64,8 +64,8 @@ body.unsupported-display::before {
 
 #Experience_Title {
 	color: #1E1E1E;
-	font-size: 7vw;
-	transform: rotate(90deg) translateX(-10vh);
+	font-size: clamp(96px, 7vw, 180px);
+	transform: rotate(90deg) translateX(-0.8em);
 	width: 0;
 	font-family: Open Sans;
 	font-weight: 600;
@@ -80,24 +80,24 @@ body.unsupported-display::before {
 #Design_Container {
 	display: flex;
 	flex-direction: column;
-	width: 20vw;
-	transform: translateX(4vw);
+	width: min(20vw, 420px);
+	transform: translateX(clamp(40px, 4vw, 110px));
 }
 
 #Design_Title {
 	color: #1E1E1E;
-	font-size: 5.2vw;
+	font-size: clamp(72px, 5.2vw, 130px);
 	font-family: Open Sans;
 	font-weight: 300;
 	text-transform: uppercase;
-	margin-top: -3.25vh;
+	margin-top: -0.35em;
 	letter-spacing: 1px;
 }
 
 #Tag_Line {
 	font-family: Open Sans;
 	font-weight: 300;
-	font-size: 1.5vw;
+	font-size: clamp(20px, 1.5vw, 32px);
 	opacity: 0.9;
 }
 
@@ -583,7 +583,7 @@ body {
 	font-size: 1vw;   /* consistent with blog body text */
 	font-family: Open Sans;
 	color: #1E1E1E;
-	padding-right: 0.75rem;
+	padding-right: 0.8rem;
 	box-sizing: border-box;
 }
 
